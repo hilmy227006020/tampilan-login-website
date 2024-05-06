@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mohamad hilmy fauzan nanda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Hallo There</h1>
+    
+    <form action="data.html" method="get" onsubmit="return confirm('Simpan data?');">
+      <label for="npm">NPM:</label>
+      <input type="text" id="npm" name="npm" required>
+      <br>
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+      <br>
+      <label for="alamat">Alamat:</label>
+      <br>
+      <textarea id="alamat" name="alamat" rows="4" cols="50" required></textarea>
+      <br>
+      <label for="jenis_kelamin">Jenis Kelamin:</label>
+      <br>
+      <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki">
+      <label for="laki-laki">Laki-laki</label>
+      <br>
+      <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+      <label for="perempuan">Perempuan</label>
+      <br>
+      <label for="jurusan">Jurusan:</label>
+      <br>
+      <select id="jurusan" name="jurusan" required>
+        <option value="">Pilih Jurusan</option>
+        <option value="Teknik Informatika">Teknik Informatika</option>
+        <option value="Sistem Informasi">Sistem Informasi</option>
+        <option value="Akuntansi">Akuntansi</option>
+        <option value="Manajemen">Manajemen</option>
+      </select>
+      <br>
+      <label for="angkatan">Angkatan:</label>
+      <br>
+      <select id="angkatan" name="angkatan" required>
+        <option value="">Pilih Angkatan</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+      </select>
+      <br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+ 
+</body>
+</html>

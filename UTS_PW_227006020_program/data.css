@@ -1,0 +1,32 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white; 
+  background-image: url(p3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+table {
+  width: 50%; 
+  border-collapse: collapse; 
+  margin: 200px auto; 
+}
+
+
+td, th {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}

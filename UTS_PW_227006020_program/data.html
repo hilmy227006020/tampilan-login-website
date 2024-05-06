@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Sederhana - Data Mahasiswa</title>
+  <link rel="stylesheet" href="data.css">
+
+</head>
+
+<body>
+    <table>
+        <tbody>
+          <tr>
+            <td style="font-weight: 500;">Nama</td>
+            <td id="name">: NULL</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500;">Jenis Kelamin</td>
+            <td id="gender">: NULL</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500;">NPM</td>
+            <td id="npm">: NULL</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500;">Alamat</td>
+            <td id="alamat">: NULL</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500;">Jurusan</td>
+            <td id="jurusan">: NULL</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500;">Angkatan</td>
+            <td id="angkatan">: NULL</td>
+          </tr>
+        </tbody>
+      </table>
+    <script>
+        
+        const params = new URLSearchParams(window.location.search);
+
+
+        const nama = decodeURIComponent(params.get('nama'));
+    const npm = decodeURIComponent(params.get('npm'));
+    const alamat = decodeURIComponent(params.get('alamat'));
+    const jenis_kelamin= decodeURIComponent(params.get('jenis_kelamin'));
+    const jurusan = decodeURIComponent(params.get('jurusan'));
+    const angkatan = decodeURIComponent(params.get('angkatan'));
+
+        document.getElementById('name').textContent = ': ' + nama;
+        document.getElementById('npm').textContent = ': ' + npm;
+        document.getElementById('alamat').textContent = ': ' + alamat;
+        document.getElementById('gender').textContent = ': ' + jenis_kelamin;
+        document.getElementById('jurusan').textContent = ': ' + jurusan;
+        document.getElementById('angkatan').textContent = ': ' + angkatan;
+    </script>
+</body>
+</html>
+ 
